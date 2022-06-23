@@ -1,0 +1,11 @@
+Component :
+	Formulaire[Nom, Prenom, E-mail]
+	Tableau[Nom, Prenom, Adresse Email]
+
+Recuperer les données
+
+Controle :
+	Controle de saisie des champs
+	control-form et module ngx
+
+Angular in memorid API

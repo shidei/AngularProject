@@ -1,0 +1,36 @@
+[
+  {
+    "nom": "Wague",
+    "prenom": "seydi",
+    "adresse": "wagueseydi039@gmail.com"
+  },
+
+  {
+    "nom": "Gueye",
+    "prenom": "Khalil",
+    "adresse": "GueyeKhalil@gmail.com"
+  },
+
+  {
+    "nom": "Diop",
+    "prenom": "Alpha",
+    "adresse": "DiopAlpha@gmail.com"
+  },
+
+  {
+    "nom": "Dia",
+    "prenom": "Abda",
+    "adresse": "DiaAbda@gmail.com"
+  },
+
+  {
+    "nom": "Sall",
+    "prenom": "Souvi",
+    "adresse": "SallSouvi@gmail.com"
+  },
+  {
+    "nom": "Diagana",
+    "prenom": "seydi",
+    "adresse": "DiaganaSeydi@gmail.com"
+  }
+]

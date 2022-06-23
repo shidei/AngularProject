@@ -1,0 +1,21 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.row{
+  color: #fff;
+  background-color: darkcyan;
+  border-radius: 10px;
+}
+
+li>a{
+  color: #fff;
+}
+
+P{
+    background-color: darkcyan;
+    font-size: 35px;
+    color: beige;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px 10pc;
+}

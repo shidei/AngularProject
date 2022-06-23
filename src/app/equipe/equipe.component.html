@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col " *ngFor="let pers of Personnes">
+      <div class="card" style="width: 18rem ">
+        <img   src="{{pers.path}}" />
+        <div class="card-body">
+          <p class="card-text">
+            {{pers.commentaire}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

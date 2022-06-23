@@ -1,0 +1,45 @@
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col logo mt-2">Notre Logo</div>
+    <div class="col">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            [routerLink]="['home']"
+            routerLinkActive="router-link-active"
+            aria-current="page"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['equipe']"
+            routerLinkActive="router-link-active"
+            >Equipe</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['formulaire']"
+            routerLinkActive="router-link-active"
+            >Formulaire</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['tableau']"
+            routerLinkActive="router-link-active"
+            >Tableau</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <router-outlet></router-outlet>
+</div>

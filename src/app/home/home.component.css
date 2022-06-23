@@ -1,0 +1,15 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.container{
+    text-align: center;
+    margin: 0;
+}
+
+.row{
+    font-size: 35px;
+    border-radius: 10pc 10px;
+    background-color: darkcyan;;
+    color: beige;
+}
+

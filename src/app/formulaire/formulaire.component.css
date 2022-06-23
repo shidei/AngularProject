@@ -1,0 +1,9 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+.container{
+  background-color:darkgray;
+  border-radius: 10px;
+  color: aliceblue;
+  text-decoration: underline solid 1px blue;
+}

@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="../../assets/images/background.png" height="300" class="m-2" />
+    </div>
+    <div class="col">
+      <form
+        class="container mt-3"
+      >
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input
+            type="text"
+            [(ngModel)]="user.nom"
+            [ngModelOptions]="{standalone : true}"
+            required
+            placeholder=" saisir nom"
+            #nomVar = "ngModel"
+            [ngClass]="{'is-invalid' : nomVar.touched && nomVar.invalid}"
+            class="form-control"
+            id="nom"
+            aria-describedby="emailHelp"
+          />
+          <div class="invalid-feedback">
+            <span *ngIf="nomVar.errors">
+                entrez votre nom
+            </span>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Prenom</label>
+          <input
+            type="text"
+            required
+            class="form-control"
+            placeholder=" saisir prenom"
+            [(ngModel)]="user.prenom"
+            [ngModelOptions]="{standalone : true}"
+            #prenomVar = "ngModel"
+            [ngClass]="{'is-invalid' : prenomVar.touched && prenomVar.invalid}"
+            id="prenom"
+            aria-describedby="emailHelp"
+          />
+          <div class="invalid-feedback" *ngIf="prenomVar.errors">
+            <span>Entrez votre prenom</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Adresse Mail</label
+          >
+          <input
+            type="email"
+            [(ngModel)]="user.email"
+            [ngModelOptions]="{standalone : true}"
+            #emailVar = "ngModel"
+            [ngClass]="{'is-invalid' : emailVar.touched && emailVar.invalid}"
+            required
+            email
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div class="invalid-feedback" >
+            <span *ngIf="emailVar.errors?.['required']">Entrez votre e-mail</span>
+            <span *ngIf="emailVar.errors?.['email']">L'e-mail est invalide</span>
+          </div>
+        </div>
+        <button class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
